@@ -1,2 +1,12 @@
 *-main.c
 binary_tree_print.c
+vgcore.1308
+vgcore.1309
+vgcore.747
+113-bst_search.c
+114-bst_remove.c
+121-avl_insert.c
+122-array_to_avl.c
+123-avl_remove.c
+133-heap_extract.c
+
