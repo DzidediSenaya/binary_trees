@@ -9,16 +9,19 @@
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-size_t left_height, right_height;
+    if (tree) /*If tree is not NULL*/
+    {
+        size_t l = 0, r = 0; /*Declare variables to store left and right heights*/
 
-if (tree == NULL)
-return (0);
-
-/* Recursively calculate the height of the left and right subtrees */
-left_height = binary_tree_height(tree->left);
-right_height = binary_tree_height(tree->right);
-
-/* Return the maximum of the two heights plus 1 (to count the current node) */
-return ((left_height > right_height ? left_height : right_height) +1);
+        /*Calculate the height of the left subtree*/
+        l = tree->left ? 1 + binary_tree_height(tree->left) : 0;
+        
+        /* Calculate the height of the right subtree*/
+        r = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+        
+        /*Return the maximum of the two heights plus 1 (to count the current node)*/
+        return ((l > r) ? l : r);
+    }
+    
+    return (0); /*If tree is NULL, return 0*/
 }
-
