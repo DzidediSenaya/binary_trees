@@ -33,4 +33,3 @@ ancestor = ancestor->parent;
 
 return (NULL);
 }
-
