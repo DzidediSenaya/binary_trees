@@ -31,10 +31,14 @@ Your code should use the Betty style. It will be checked using betty-style.pl an
 You are not allowed to use global variables
 No more than 5 functions per file
 You are allowed to use the standard library
-In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+In the following examples, the main.c files are shown as examples. You can use them to test your functions,
+but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. 
+Our main.c files might be different from the one shown in the examples
 The prototypes of all your functions should be included in your header file called binary_trees.h
 Don’t forget to push your header file
 All your header files should be include guarded
+
+
 GitHub
 There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.
 
@@ -69,6 +73,6 @@ typedef struct binary_tree_s heap_t;
 Note: For tasks 0 to 23 (included), you have to deal with simple binary trees. They are not BSTs, thus they don’t follow any kind of rule.
 
 Print function
-To match the examples in the tasks, you are given this function
+To match the examples in the tasks, you are given this function (binary_print.c)
 
 This function is used only for visualization purposes. You don’t have to push it to your repo. It may not be used during the correction
